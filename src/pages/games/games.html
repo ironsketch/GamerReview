@@ -1,0 +1,25 @@
+<ion-header no-border>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-segment [(ngModel)]="gameType">
+      <ion-segment-button value="board">Board Games</ion-segment-button>
+      <ion-segment-button value="video">Video Games</ion-segment-button>
+    </ion-segment>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let n of [1, 2, 3, 4, 5, 6, 7]">
+    <ion-card-content ion-item>
+      Game {{n}}!
+      <span item-right class="score">{{5 - n / 10}}</span>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

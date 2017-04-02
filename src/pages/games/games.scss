@@ -1,0 +1,44 @@
+page-games {
+  .toolbar-md {
+    padding-bottom: 0;
+  }
+  .bar-button-menutoggle-md {
+    margin: 0 0.2rem;
+    min-width: inherit;
+  }
+  .toolbar-content-md {
+    align-self: flex-end;
+  }
+  .segment-md .segment-button {
+    background-color: $tabs-background;
+    border-bottom-width: 0;
+    color: $text-color;
+    font-size: 1.8rem;
+    opacity: 1;
+    text-transform: none;
+
+    flex: none;
+    height: auto;
+    line-height: inherit;
+    margin: 0 10px;
+    padding: 8px 6px 3px;
+    width: auto;
+
+    border-radius: 13px 13px 0 0 / 8px 8px;
+    box-shadow: 0 -3px rgba(0, 0, 0, 0.2);
+  }
+  .segment-md .segment-button.segment-activated {
+    background-color: $background-color;
+  }
+
+  .card-md {
+    box-shadow: none;
+  }
+  .card-md .item-md {
+    background-color: $tabs-background;
+  }
+  .score {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+}

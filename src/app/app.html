@@ -1,0 +1,21 @@
+<ion-menu [content]="content">
+  <ion-header no-border>
+    <ion-toolbar color="primary">
+      <ion-title>GamerReview</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list no-lines>
+      <button menuClose ion-item color="primary">Games</button>
+      <button menuClose ion-item color="primary">Add Game</button>
+      <button menuClose ion-item color="primary">Random</button>
+      <button menuClose ion-item color="primary">Friends</button>
+      <button menuClose ion-item color="primary">Settings</button>
+      <button menuClose ion-item color="primary">Logout</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
