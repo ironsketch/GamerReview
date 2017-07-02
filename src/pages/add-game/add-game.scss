@@ -1,0 +1,17 @@
+page-add-game {
+  .list {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  .item-textarea {
+    flex-grow: 1;
+  }
+  ion-textarea {
+    display: flex;
+  }
+  textarea {
+    flex: 1;
+    resize: none;
+  }
+}
